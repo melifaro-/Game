@@ -23,8 +23,13 @@
 		7840D77717E62B2C00D24991 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7840D75217E62B2C00D24991 /* Foundation.framework */; };
 		7840D77F17E62B2C00D24991 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7840D77D17E62B2C00D24991 /* InfoPlist.strings */; };
 		7840D78217E62B2C00D24991 /* TheGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7840D78117E62B2C00D24991 /* TheGameTests.m */; };
-		7840D78D17E63A5B00D24991 /* Solder.m in Sources */ = {isa = PBXBuildFile; fileRef = 7840D78C17E63A5B00D24991 /* Solder.m */; };
-		7840D79017E63ECE00D24991 /* Scena.m in Sources */ = {isa = PBXBuildFile; fileRef = 7840D78F17E63ECE00D24991 /* Scena.m */; };
+		78D4D4F717F85776000B3BB6 /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D4D4F617F85776000B3BB6 /* GameController.m */; };
+		78D4D4FA17F85787000B3BB6 /* Army.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D4D4F917F85787000B3BB6 /* Army.m */; };
+		78D4D4FD17F8579A000B3BB6 /* Unit.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D4D4FC17F8579A000B3BB6 /* Unit.m */; };
+		78D4D50017F857AA000B3BB6 /* Field.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D4D4FF17F857AA000B3BB6 /* Field.m */; };
+		78D4D50317F857BD000B3BB6 /* Mind.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D4D50217F857BD000B3BB6 /* Mind.m */; };
+		78D4D50617F8BFEA000B3BB6 /* Solder.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D4D50517F8BFEA000B3BB6 /* Solder.m */; };
+		78D4D50917F9FE12000B3BB6 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D4D50817F9FE12000B3BB6 /* CollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,12 +65,21 @@
 		7840D77E17E62B2C00D24991 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7840D78017E62B2C00D24991 /* TheGameTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheGameTests.h; sourceTree = "<group>"; };
 		7840D78117E62B2C00D24991 /* TheGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheGameTests.m; sourceTree = "<group>"; };
-		7840D78B17E63A5B00D24991 /* Solder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Solder.h; sourceTree = "<group>"; };
-		7840D78C17E63A5B00D24991 /* Solder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Solder.m; sourceTree = "<group>"; };
-		7840D78E17E63ECE00D24991 /* Scena.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scena.h; sourceTree = "<group>"; };
-		7840D78F17E63ECE00D24991 /* Scena.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scena.m; sourceTree = "<group>"; };
-		7840D79117E777C000D24991 /* ScenaPresenterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScenaPresenterProtocol.h; sourceTree = "<group>"; };
 		7840D79217E7803600D24991 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		78D4D4F517F85776000B3BB6 /* GameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameController.h; path = Model/GameController.h; sourceTree = "<group>"; };
+		78D4D4F617F85776000B3BB6 /* GameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameController.m; path = Model/GameController.m; sourceTree = "<group>"; };
+		78D4D4F817F85787000B3BB6 /* Army.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Army.h; path = Model/Army.h; sourceTree = "<group>"; };
+		78D4D4F917F85787000B3BB6 /* Army.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Army.m; path = Model/Army.m; sourceTree = "<group>"; };
+		78D4D4FB17F8579A000B3BB6 /* Unit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Unit.h; path = Model/Unit.h; sourceTree = "<group>"; };
+		78D4D4FC17F8579A000B3BB6 /* Unit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Unit.m; path = Model/Unit.m; sourceTree = "<group>"; };
+		78D4D4FE17F857AA000B3BB6 /* Field.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Field.h; path = Model/Field.h; sourceTree = "<group>"; };
+		78D4D4FF17F857AA000B3BB6 /* Field.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Field.m; path = Model/Field.m; sourceTree = "<group>"; };
+		78D4D50117F857BD000B3BB6 /* Mind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mind.h; path = Model/Mind.h; sourceTree = "<group>"; };
+		78D4D50217F857BD000B3BB6 /* Mind.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mind.m; path = Model/Mind.m; sourceTree = "<group>"; };
+		78D4D50417F8BFEA000B3BB6 /* Solder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Solder.h; path = Model/Solder.h; sourceTree = "<group>"; };
+		78D4D50517F8BFEA000B3BB6 /* Solder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Solder.m; path = Model/Solder.m; sourceTree = "<group>"; };
+		78D4D50717F9FE12000B3BB6 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		78D4D50817F9FE12000B3BB6 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,12 +145,10 @@
 				7840D76B17E62B2C00D24991 /* ViewController.h */,
 				7840D76C17E62B2C00D24991 /* ViewController.m */,
 				7840D75717E62B2C00D24991 /* Supporting Files */,
-				7840D78B17E63A5B00D24991 /* Solder.h */,
-				7840D78C17E63A5B00D24991 /* Solder.m */,
-				7840D78E17E63ECE00D24991 /* Scena.h */,
-				7840D78F17E63ECE00D24991 /* Scena.m */,
-				7840D79117E777C000D24991 /* ScenaPresenterProtocol.h */,
+				78D4D4F417F8573F000B3BB6 /* Model */,
 				7840D79217E7803600D24991 /* Common.h */,
+				78D4D50717F9FE12000B3BB6 /* CollectionViewCell.h */,
+				78D4D50817F9FE12000B3BB6 /* CollectionViewCell.m */,
 			);
 			path = TheGame;
 			sourceTree = "<group>";
@@ -172,6 +184,25 @@
 				7840D77D17E62B2C00D24991 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		78D4D4F417F8573F000B3BB6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				78D4D50417F8BFEA000B3BB6 /* Solder.h */,
+				78D4D50517F8BFEA000B3BB6 /* Solder.m */,
+				78D4D4F517F85776000B3BB6 /* GameController.h */,
+				78D4D4F617F85776000B3BB6 /* GameController.m */,
+				78D4D4F817F85787000B3BB6 /* Army.h */,
+				78D4D4F917F85787000B3BB6 /* Army.m */,
+				78D4D4FB17F8579A000B3BB6 /* Unit.h */,
+				78D4D4FC17F8579A000B3BB6 /* Unit.m */,
+				78D4D4FE17F857AA000B3BB6 /* Field.h */,
+				78D4D4FF17F857AA000B3BB6 /* Field.m */,
+				78D4D50117F857BD000B3BB6 /* Mind.h */,
+				78D4D50217F857BD000B3BB6 /* Mind.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,10 +316,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				7840D75D17E62B2C00D24991 /* main.m in Sources */,
+				78D4D4FD17F8579A000B3BB6 /* Unit.m in Sources */,
+				78D4D4FA17F85787000B3BB6 /* Army.m in Sources */,
+				78D4D50017F857AA000B3BB6 /* Field.m in Sources */,
 				7840D76117E62B2C00D24991 /* AppDelegate.m in Sources */,
+				78D4D50317F857BD000B3BB6 /* Mind.m in Sources */,
+				78D4D50917F9FE12000B3BB6 /* CollectionViewCell.m in Sources */,
 				7840D76D17E62B2C00D24991 /* ViewController.m in Sources */,
-				7840D78D17E63A5B00D24991 /* Solder.m in Sources */,
-				7840D79017E63ECE00D24991 /* Scena.m in Sources */,
+				78D4D50617F8BFEA000B3BB6 /* Solder.m in Sources */,
+				78D4D4F717F85776000B3BB6 /* GameController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,6 +505,7 @@
 				7840D78717E62B2C00D24991 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7840D78817E62B2C00D24991 /* Build configuration list for PBXNativeTarget "TheGameTests" */ = {
 			isa = XCConfigurationList;
@@ -477,6 +514,7 @@
 				7840D78A17E62B2C00D24991 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

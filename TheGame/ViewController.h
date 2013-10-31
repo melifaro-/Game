@@ -6,17 +6,14 @@
 //  Copyright (c) 2013 inMixed LLC. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import "ScenaPresenterProtocol.h"
-#import "Scena.h"
+#import "GameController.h"
 
-@interface ViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate, ScenaPresenterProtocol, CommanderProtocol>
+@interface ViewController : UIViewController
 {
     __weak IBOutlet UICollectionView    *_scenaCollectionView;
     __weak IBOutlet UIView              *_solderControlsView;
-    NSMutableArray                      *_solders;
     
-    Scena                               *_scena;
+    GameController*                     _game;
 }
 
 //- (IBAction)leftTouched:(id)sender;

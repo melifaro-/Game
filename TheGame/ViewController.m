@@ -15,73 +15,64 @@
 
 @implementation ViewController
 
-- (void)dealloc
-{
-    _solders = nil;
-    _scena = nil;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    _scenaCollectionView.dataSource = self;
-    _scenaCollectionView.delegate = self;
     
-    _solders = [[NSMutableArray alloc] init];
+    Field* bf = [Field sharedInstance];
+    [bf assignUI:_scenaCollectionView];
+    _game = [[GameController alloc] initWithBattleField:bf];
     
-    _scena = [[Scena alloc] init];
-    _scena.presenter = self;
-    
-    [_scena startGame];
+    [_game startGame];
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
 }
-
-#pragma mark -
-#pragma mark UICollectionView DataSource
-
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
-{
-    return SCENA_WIDTH * SCENA_HEIGHT;
-}
-
-// The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    UICollectionViewCell* cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
-    
-    if(cell)
-    {
-        cell.backgroundColor = [UIColor blackColor];
-        cell.layer.borderWidth = 1;
-        cell.layer.borderColor = [[UIColor darkGrayColor] CGColor];
-    }
-    
-    for (Solder* solder in _solders)
-    {
-        if (indexPath.row == [solder indexPath].row)
-        {
-            switch (solder.army.type)
-            {
-                case RedArmy:
-                     cell.backgroundColor = [UIColor redColor];
-                    break;
-                case WhiteArmy:
-                    cell.backgroundColor = [UIColor whiteColor];
-                    break;
-                    
-                default:
-                    break;
-            }
-        }   
-    }
-    
-    return cell;
-}
+//
+//#pragma mark -
+//#pragma mark UICollectionView DataSource
+//
+//- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+//{
+//    return SCENA_WIDTH * SCENA_HEIGHT;
+//}
+//
+//// The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
+//- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    UICollectionViewCell* cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
+//    
+//    if(cell)
+//    {
+//        cell.backgroundColor = [UIColor blackColor];
+//        cell.layer.borderWidth = 1;
+//        cell.layer.borderColor = [[UIColor darkGrayColor] CGColor];
+//    }
+//    
+//    for (Solder* solder in _solders)
+//    {
+//        if (indexPath.row == [solder indexPath].row)
+//        {
+//            switch (solder.army.type)
+//            {
+//                case RedArmy:
+//                     cell.backgroundColor = [UIColor redColor];
+//                    break;
+//                case WhiteArmy:
+//                    cell.backgroundColor = [UIColor whiteColor];
+//                    break;
+//                    
+//                default:
+//                    break;
+//            }
+//        }   
+//    }
+//    
+//    return cell;
+//}
 
 #pragma mark -
 #pragma mark UICollectionView Delegate
@@ -123,36 +114,36 @@
 //    [self updateScena:prevPosition withCurrentPosition:currentPosition];
 //}
 
-#pragma mark -
-#pragma mark Helper Methods
-
-- (void)updateScena:(NSIndexPath*)prevPosition withCurrentPosition:(NSIndexPath*)currentPosition
-{
-    NSArray* indexPathsOnUpdate = nil;
-    if (currentPosition.row == prevPosition.row)
-    {
-        indexPathsOnUpdate = [NSArray arrayWithObjects:prevPosition, nil];
-    }
-    else
-    {
-        indexPathsOnUpdate = [NSArray arrayWithObjects:prevPosition, currentPosition, nil];
-    }
-    
-    [_scenaCollectionView reloadItemsAtIndexPaths:indexPathsOnUpdate];
-}
-
-#pragma mark -
-#pragma mark Scena Presenter Protocol
-- (void)placeSolder:(Solder*)solder
-{
-    [_solders addObject:solder];
-    
-    [_scenaCollectionView reloadItemsAtIndexPaths:[NSArray arrayWithObject:[solder indexPath]]];
-}
-
-- (void)renewSolder:(Solder *)solder
-{
-    [_scenaCollectionView reloadItemsAtIndexPaths:[NSArray arrayWithObject:[solder indexPath]]];
-}
+//#pragma mark -
+//#pragma mark Helper Methods
+//
+//- (void)updateScena:(NSIndexPath*)prevPosition withCurrentPosition:(NSIndexPath*)currentPosition
+//{
+//    NSArray* indexPathsOnUpdate = nil;
+//    if (currentPosition.row == prevPosition.row)
+//    {
+//        indexPathsOnUpdate = [NSArray arrayWithObjects:prevPosition, nil];
+//    }
+//    else
+//    {
+//        indexPathsOnUpdate = [NSArray arrayWithObjects:prevPosition, currentPosition, nil];
+//    }
+//    
+//    [_scenaCollectionView reloadItemsAtIndexPaths:indexPathsOnUpdate];
+//}
+//
+//#pragma mark -
+//#pragma mark Scena Presenter Protocol
+//- (void)placeSolder:(Solder*)solder
+//{
+//    [_solders addObject:solder];
+//    
+//    [_scenaCollectionView reloadItemsAtIndexPaths:[NSArray arrayWithObject:[solder indexPath]]];
+//}
+//
+//- (void)renewSolder:(Solder *)solder
+//{
+//    [_scenaCollectionView reloadItemsAtIndexPaths:[NSArray arrayWithObject:[solder indexPath]]];
+//}
 
 @end

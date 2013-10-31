@@ -6,7 +6,15 @@
 //  Copyright (c) 2013 inMixed LLC. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+
 typedef NSInteger TGInteger;
 
-#define SCENA_HEIGHT  10
-#define SCENA_WIDTH  10
+#define FIELD_HEIGHT    10
+#define FIELD_WIDTH     10
+
+typedef enum _color {
+    RedColor = 0,
+    WhiteColor,
+    CountOfColors
+} ColorType;
