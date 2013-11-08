@@ -68,28 +68,53 @@ static Field* __sharedInstance = nil;
 {
     Position nextP = s.position;
     nextP.x -= SPEED;
-    return [self moveSolderWithCheck:s toPosition:nextP];
+    BOOL rval = [self moveSolderWithCheck:s toPosition:nextP];
+    if (rval)
+    {
+        [s stepLeft];
+        [self attack:s];
+    }
+    return rval;
 }
 
 - (BOOL)movingUp:(Solder*)s
 {
     Position nextP = s.position;
     nextP.y -= SPEED;
-    return [self moveSolderWithCheck:s toPosition:nextP];
+    BOOL rval = [self moveSolderWithCheck:s toPosition:nextP];
+    if (rval)
+    {
+        [s stepUp];
+        [self attack:s];
+    }
+
+    return rval;
 }
 
 - (BOOL)movingRight:(Solder*)s
 {
     Position nextP = s.position;
     nextP.x += SPEED;
-    return [self moveSolderWithCheck:s toPosition:nextP];
+    BOOL rval = [self moveSolderWithCheck:s toPosition:nextP];
+    if (rval)
+    {
+        [s stepRight];
+        [self attack:s];
+    }
+    return rval;
 }
 
 - (BOOL)movingDown:(Solder*)s
 {
     Position nextP = s.position;
     nextP.y += SPEED;
-    return [self moveSolderWithCheck:s toPosition:nextP];
+    BOOL rval = [self moveSolderWithCheck:s toPosition:nextP];
+    if (rval)
+    {
+        [s stepDown];
+        [self attack:s];
+    }
+    return rval;
 }
 
 - (BOOL)moveSolderWithCheck:(Solder*)s toPosition:(Position)p
@@ -97,8 +122,6 @@ static Field* __sharedInstance = nil;
     if ([self checkPosition:p])
     {
         [self.fieldVisualizer moveObject:s toPosition:p];
-        [s stepDown];
-        [self attack:s];
         return YES;
     }
     else
@@ -116,13 +139,18 @@ static Field* __sharedInstance = nil;
 
 - (void)attack:(Solder*)u
 {
-//    for (Solder* s in _units)
-//    {
-//        if (ABS(s.x - u.x) + ABS(s.y - u.y) < 2 && s.color != u.color && s != u)
-//        {
-//            [s attackedBySolder:u];
-//        }
-//    }
+    for (Solder* s in _solders)
+    {
+        if (ABS(s.position.x - u.position.x) + ABS(s.position.y - u.position.y) < 3 && s.color != u.color && s != u)
+        {
+            [s attackedBySolder:u];
+            if (![s isAlive])
+            {
+                [self killSolder:s];
+            }
+            break;
+        }
+    }
 }
 
 @end

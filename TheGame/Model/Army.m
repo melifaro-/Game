@@ -14,6 +14,9 @@
 
 @implementation Army
 
+@synthesize solders = _solders,
+            color = _color;
+
 - (id)initWithColor:(ColorType)color
 {
     if (self = [super init])
@@ -43,7 +46,10 @@
 {
     for (Solder* s in _solders)
     {
-        [s doManuever];
+        if ([s isAlive])
+        {
+            [s doManuever];
+        }
     }
 }
 

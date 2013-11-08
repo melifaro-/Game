@@ -9,6 +9,13 @@
 #import "CollectionViewVisualizerImpl.h"
 #import "CollectionViewCell.h"
 
+typedef struct _Item
+{
+    Position    position;
+    ColorType   color;
+    char       text[10];
+}Item;
+
 @implementation CollectionViewVisualizerImpl
 
 - (id)init
@@ -20,21 +27,42 @@
     return self;
 }
 
-- (void)drawColor:(ColorType)color atPositionImpl:(Position)p
+- (void)drawText:(NSString*)text onColor:(ColorType)color atPositionImpl:(Position)p
 {
     switch (color)
     {
         case RedColor:
         case WhiteColor:
         {
+            Item i;
+            i.position = p;
+            i.color = color;
+            NSRange range;
+            range.location = 0;
+            range.length = 10;
 
+            [text getCString:i.text maxLength:10 encoding:NSUTF8StringEncoding];
+
+            NSValue* val = [NSValue valueWithBytes:&i objCType:@encode(Item)];
+            [_items addObject:val];
             break;
         }
         default:
         {
-
+            for (NSValue* value in _items)
+            {
+                Item i;
+                [value getValue:&i];
+                if (p.x == i.position.x && p.y == i.position.y)
+                {
+                    [_items removeObject:value];
+                    break;
+                }
+            }
         }
     }
+    assert(_items.count != 11);
+    [_view reloadData];
 }
 
 
@@ -66,36 +94,39 @@
         cell.layer.borderColor = [[UIColor darkGrayColor] CGColor];
     }
     
-    Unit* currentUnit = nil;
+    Item currentItem;
     
-    for (Unit* u in _items)
+    for (NSValue* value in _items)
     {
-        if (indexPath.row == [u indexPath].row)
+        Item i;
+        [value getValue:&i];
+        if (indexPath.row == [self indexPathForItem:i].row)
         {
-            currentUnit = u;
+            currentItem = i;
             break;
         }
     }
     
-    if (currentUnit)
+    switch (currentItem.color)
     {
-        switch (currentUnit.color)
-        {
-            case RedColor:
-                cell.backgroundColor = [UIColor redColor];
-                break;
-            case WhiteColor:
-                cell.backgroundColor = [UIColor whiteColor];
-                break;
-                
-            default:
-                break;
-        }
-        
-        [cell.statusLabel setText:[NSString stringWithFormat:@"%@", currentUnit]];
+        case RedColor:
+            cell.backgroundColor = [UIColor redColor];
+            break;
+        case WhiteColor:
+            cell.backgroundColor = [UIColor whiteColor];
+            break;
+        default:
+            break;
     }
     
+    [cell.statusLabel setText:[NSString stringWithFormat:@"%@", [NSString stringWithUTF8String:currentItem.text]]];
+    
     return cell;
+}
+
+- (NSIndexPath*)indexPathForItem:(Item)item
+{
+    return [NSIndexPath indexPathForItem:item.position.y * FIELD_WIDTH + item.position.x  inSection:0];
 }
 
 

@@ -15,6 +15,8 @@
     Army*       _a1;
     Army*       _a2;
     Field*      _bf;    //battle field
+    
+    NSTimer*    _gameTimer;
 }
 
 - (id)initWithBattleField:(Field*)bf;

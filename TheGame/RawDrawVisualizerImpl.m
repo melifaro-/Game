@@ -10,7 +10,7 @@
 
 @implementation RawDrawVisualizerImpl
 
-- (void)drawColor:(ColorType)color atPositionImpl:(Position)p
+- (void)drawText:(NSString*)text onColor:(ColorType)color atPositionImpl:(Position)p
 {
 
 }

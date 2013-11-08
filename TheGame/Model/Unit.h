@@ -18,7 +18,6 @@ typedef struct Position
 
 @interface Unit : NSObject
 {
-    __weak Field*   _field;
     Position        _position;
     ColorType       _color;
 }

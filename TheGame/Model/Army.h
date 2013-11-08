@@ -14,6 +14,9 @@
     ColorType   _color;
 }
 
+@property (nonatomic, readonly) NSArray* solders;
+@property (nonatomic, readonly) ColorType color;
+
 - (id)initWithColor:(ColorType)color;
 
 - (void)doManuever;

@@ -11,6 +11,6 @@
 
 @interface VisualizerImpl : NSObject
 
-- (void)drawColor:(ColorType)color atPositionImpl:(Position)p;
+- (void)drawText:(NSString*)text onColor:(ColorType)color atPositionImpl:(Position)p;
 
 @end

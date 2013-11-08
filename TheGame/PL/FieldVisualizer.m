@@ -12,18 +12,18 @@
 
 - (void)placeObject:(Unit*)obj
 {
-    [self drawColor:obj.color atPosition:obj.position];
+    [self drawText:[obj description] onColor:obj.color atPosition:obj.position];
 }
 
 - (void)removeObject:(Unit*)obj
 {
-    [self drawColor:EmptyColor atPosition:obj.position];
+    [self drawText:[obj description] onColor:EmptyColor atPosition:obj.position];
 }
 
 - (void)moveObject:(Unit*)obj toPosition:(Position)p
 {
-    [self drawColor:EmptyColor atPosition:obj.position];
-    [self drawColor:obj.color atPosition:p];
+    [self drawText:[obj description] onColor:EmptyColor atPosition:obj.position];
+    [self drawText:[obj description] onColor:obj.color atPosition:p];
 }
 
 @end

@@ -14,6 +14,6 @@
 
 @property (nonatomic, retain) VisualizerImpl* visualizerImpl;
 
-- (void)drawColor:(ColorType)color atPosition:(Position)p;
+- (void)drawText:(NSString*)text onColor:(ColorType)color atPosition:(Position)p;
 
 @end

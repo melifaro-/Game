@@ -10,7 +10,7 @@
 
 @implementation VisualizerImpl
 
-- (void)drawColor:(ColorType)color atPositionImpl:(Position)p
+- (void)drawText:(NSString*)text onColor:(ColorType)color atPositionImpl:(Position)p
 {
     //NOTE: abstract function, should be overriden
     assert(false);

@@ -10,10 +10,10 @@
 
 @implementation Visualizer
 
-- (void)drawColor:(ColorType)color atPosition:(Position)p
+- (void)drawText:(NSString*)text onColor:(ColorType)color atPosition:(Position)p
 {
     assert(self.visualizerImpl);
-    [self.visualizerImpl drawColor:color atPositionImpl:p];
+    [self.visualizerImpl drawText:text onColor:color atPositionImpl:p];
 }
 
 @end
