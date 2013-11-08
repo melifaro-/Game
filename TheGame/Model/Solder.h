@@ -19,5 +19,10 @@
 - (BOOL)isAlive;
 - (void)attackedBySolder:(Solder*)s;
 
+- (void)stepLeft;
+- (void)stepUp;
+- (void)stepRight;
+- (void)stepDown;
+
 @end
 

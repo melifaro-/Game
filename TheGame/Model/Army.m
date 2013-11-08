@@ -32,7 +32,7 @@
             Solder* s = [[Solder alloc] initWithColor:color atX:2 * i atY:y];
             [sa addObject:s];
             
-            [[Field sharedInstance] addUnit:s];
+            [[Field sharedInstance] placeSolder:s];
         }
         _solders = sa;
     }

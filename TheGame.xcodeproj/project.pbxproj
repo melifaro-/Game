@@ -30,6 +30,11 @@
 		78D4D50317F857BD000B3BB6 /* Mind.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D4D50217F857BD000B3BB6 /* Mind.m */; };
 		78D4D50617F8BFEA000B3BB6 /* Solder.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D4D50517F8BFEA000B3BB6 /* Solder.m */; };
 		78D4D50917F9FE12000B3BB6 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D4D50817F9FE12000B3BB6 /* CollectionViewCell.m */; };
+		78FC20CC182D097A00DC5A12 /* FieldVisualizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FC20CB182D097A00DC5A12 /* FieldVisualizer.m */; };
+		78FC20D0182D09BA00DC5A12 /* Visualizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FC20CF182D09BA00DC5A12 /* Visualizer.m */; };
+		78FC20D3182D09CE00DC5A12 /* VisualizerImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FC20D2182D09CE00DC5A12 /* VisualizerImpl.m */; };
+		78FC20D6182D09EA00DC5A12 /* RawDrawVisualizerImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FC20D5182D09EA00DC5A12 /* RawDrawVisualizerImpl.m */; };
+		78FC20D9182D0A0600DC5A12 /* CollectionViewVisualizerImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FC20D8182D0A0600DC5A12 /* CollectionViewVisualizerImpl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +85,17 @@
 		78D4D50517F8BFEA000B3BB6 /* Solder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Solder.m; path = Model/Solder.m; sourceTree = "<group>"; };
 		78D4D50717F9FE12000B3BB6 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
 		78D4D50817F9FE12000B3BB6 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		78FC20CA182D097A00DC5A12 /* FieldVisualizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FieldVisualizer.h; path = PL/FieldVisualizer.h; sourceTree = "<group>"; };
+		78FC20CB182D097A00DC5A12 /* FieldVisualizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FieldVisualizer.m; path = PL/FieldVisualizer.m; sourceTree = "<group>"; };
+		78FC20CE182D09BA00DC5A12 /* Visualizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Visualizer.h; path = PL/Visualizer.h; sourceTree = "<group>"; };
+		78FC20CF182D09BA00DC5A12 /* Visualizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Visualizer.m; path = PL/Visualizer.m; sourceTree = "<group>"; };
+		78FC20D1182D09CE00DC5A12 /* VisualizerImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VisualizerImpl.h; path = PL/VisualizerImpl.h; sourceTree = "<group>"; };
+		78FC20D2182D09CE00DC5A12 /* VisualizerImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VisualizerImpl.m; path = PL/VisualizerImpl.m; sourceTree = "<group>"; };
+		78FC20D4182D09EA00DC5A12 /* RawDrawVisualizerImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RawDrawVisualizerImpl.h; sourceTree = "<group>"; };
+		78FC20D5182D09EA00DC5A12 /* RawDrawVisualizerImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RawDrawVisualizerImpl.m; sourceTree = "<group>"; };
+		78FC20D7182D0A0600DC5A12 /* CollectionViewVisualizerImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewVisualizerImpl.h; sourceTree = "<group>"; };
+		78FC20D8182D0A0600DC5A12 /* CollectionViewVisualizerImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewVisualizerImpl.m; sourceTree = "<group>"; };
+		78FC20DB182D0A4600DC5A12 /* FieldVisualizerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FieldVisualizerProtocol.h; path = PL/FieldVisualizerProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +165,7 @@
 				7840D79217E7803600D24991 /* Common.h */,
 				78D4D50717F9FE12000B3BB6 /* CollectionViewCell.h */,
 				78D4D50817F9FE12000B3BB6 /* CollectionViewCell.m */,
+				78FC20CD182D098500DC5A12 /* PresenatationLayer */,
 			);
 			path = TheGame;
 			sourceTree = "<group>";
@@ -203,6 +220,24 @@
 				78D4D50217F857BD000B3BB6 /* Mind.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		78FC20CD182D098500DC5A12 /* PresenatationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				78FC20DB182D0A4600DC5A12 /* FieldVisualizerProtocol.h */,
+				78FC20CA182D097A00DC5A12 /* FieldVisualizer.h */,
+				78FC20CB182D097A00DC5A12 /* FieldVisualizer.m */,
+				78FC20CE182D09BA00DC5A12 /* Visualizer.h */,
+				78FC20CF182D09BA00DC5A12 /* Visualizer.m */,
+				78FC20D1182D09CE00DC5A12 /* VisualizerImpl.h */,
+				78FC20D2182D09CE00DC5A12 /* VisualizerImpl.m */,
+				78FC20D4182D09EA00DC5A12 /* RawDrawVisualizerImpl.h */,
+				78FC20D5182D09EA00DC5A12 /* RawDrawVisualizerImpl.m */,
+				78FC20D7182D0A0600DC5A12 /* CollectionViewVisualizerImpl.h */,
+				78FC20D8182D0A0600DC5A12 /* CollectionViewVisualizerImpl.m */,
+			);
+			name = PresenatationLayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,13 +351,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				7840D75D17E62B2C00D24991 /* main.m in Sources */,
+				78FC20CC182D097A00DC5A12 /* FieldVisualizer.m in Sources */,
 				78D4D4FD17F8579A000B3BB6 /* Unit.m in Sources */,
 				78D4D4FA17F85787000B3BB6 /* Army.m in Sources */,
+				78FC20D9182D0A0600DC5A12 /* CollectionViewVisualizerImpl.m in Sources */,
 				78D4D50017F857AA000B3BB6 /* Field.m in Sources */,
 				7840D76117E62B2C00D24991 /* AppDelegate.m in Sources */,
 				78D4D50317F857BD000B3BB6 /* Mind.m in Sources */,
 				78D4D50917F9FE12000B3BB6 /* CollectionViewCell.m in Sources */,
 				7840D76D17E62B2C00D24991 /* ViewController.m in Sources */,
+				78FC20D3182D09CE00DC5A12 /* VisualizerImpl.m in Sources */,
+				78FC20D6182D09EA00DC5A12 /* RawDrawVisualizerImpl.m in Sources */,
+				78FC20D0182D09BA00DC5A12 /* Visualizer.m in Sources */,
 				78D4D50617F8BFEA000B3BB6 /* Solder.m in Sources */,
 				78D4D4F717F85776000B3BB6 /* GameController.m in Sources */,
 			);

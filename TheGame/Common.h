@@ -14,7 +14,8 @@ typedef NSInteger TGInteger;
 #define FIELD_WIDTH     10
 
 typedef enum _color {
-    RedColor = 0,
+    EmptyColor = 0,
+    RedColor,
     WhiteColor,
     CountOfColors
 } ColorType;

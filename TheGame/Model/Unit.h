@@ -8,27 +8,27 @@
 
 @class Field;
 
+#define SPEED 1
+
+typedef struct Position
+{
+    int x;
+    int y;
+} Position;
+
 @interface Unit : NSObject
 {
     __weak Field*   _field;
-    int             _x;
-    int             _y;
+    Position        _position;
     ColorType       _color;
-    int             _speed;
 }
 
-@property (nonatomic, assign, readonly) int x;
-@property (nonatomic, assign, readonly) int y;
+@property (nonatomic, assign, readonly) Position position;
 @property (nonatomic, assign, readonly) ColorType color;
-@property (nonatomic, assign, readonly) int speed;
 
 - (id)initWithColor:(ColorType)color atX:(int)x atY:(int)y;
 
+//TODO: move to category
 - (NSIndexPath*)indexPath;
-
-- (BOOL)moveLeft;
-- (BOOL)moveUp;
-- (BOOL)moveRight;
-- (BOOL)moveDown;
 
 @end

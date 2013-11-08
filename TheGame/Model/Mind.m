@@ -21,28 +21,28 @@
         decisionMade = YES;
         d = random() % DecisionsCount;
         
-        int fx = s.x;
-        int fy = s.y;
+        int fx = s.position.x;
+        int fy = s.position.y;
         
         switch (d) {
             case LeftDirectionDecision:
             {
-                fx -= s.speed;
+                fx -= SPEED;
                 break;
             }
             case UpDirectionDecison:
             {
-                fy -= s.speed;
+                fy -= SPEED;
                 break;
             }
             case RightDirectionDecision:
             {
-                fx += s.speed;
+                fx += SPEED;
                 break;
             }
             case DownDirectionDecision:
             {
-                fy += s.speed;
+                fy += SPEED;
                 break;
             }
             default:
@@ -51,7 +51,7 @@
         
         for (Unit* u in units)
         {
-            if (u.x == fx && u.y == fy)
+            if (u.position.x == fx && u.position.y == fy)
             {
                 decisionMade = NO;
                 break;

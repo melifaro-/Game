@@ -6,30 +6,28 @@
 //  Copyright (c) 2013 inMixed LLC. All rights reserved.
 //
 
-#import "Unit.h"
+#import "Solder.h"
+#import "FieldVisualizerProtocol.h"
 
-@interface Field : NSObject <UICollectionViewDataSource, UICollectionViewDelegate>
+@interface Field : NSObject
 {
-    NSMutableArray*     _units;
-    UICollectionView*   _view;
+    NSMutableArray*     _solders;
 }
+
+@property (nonatomic, retain) id<FieldVisualizerProtocol> fieldVisualizer;
 
 + (id)sharedInstance;
 
-- (void)addUnit:(Unit*)u;
-- (void)removeUnit:(Unit*)u;
-- (void)updateUnit:(Unit*)u;
-- (void)updateAround:(Unit*)u;
+- (void)placeSolder:(Solder*)u;
+- (void)killSolder:(Solder*)u;
 
-- (BOOL)moveUnitLeft:(Unit*)u;
-- (BOOL)moveUnitUp:(Unit*)u;
-- (BOOL)moveUnitRight:(Unit*)u;
-- (BOOL)moveUnitDown:(Unit*)u;
 
-- (BOOL)checkDestenationX:(int)x Y:(int)y;
+- (BOOL)movingLeft:(Solder*)s;
+- (BOOL)movingUp:(Solder*)s;
+- (BOOL)movingRight:(Solder*)s;
+- (BOOL)movingDown:(Solder*)s;
 
+- (BOOL)checkPosition:(Position)p;
 - (NSArray*)lookAround:(Unit*)u;
-
-- (void)assignUI:(UICollectionView*)view;
 
 @end

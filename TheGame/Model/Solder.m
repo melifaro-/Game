@@ -45,30 +45,28 @@
         switch (d) {
             case LeftDirectionDecision:
             {
-                moved = [[Field sharedInstance] moveUnitLeft:self];
+                moved = [[Field sharedInstance] movingLeft:self];
                 break;
             }
             case UpDirectionDecison:
             {
-                moved = [[Field sharedInstance] moveUnitUp:self];
+                moved = [[Field sharedInstance] movingUp:self];
                 break;
             }
             case RightDirectionDecision:
             {
-                moved = [[Field sharedInstance] moveUnitRight:self];
+                moved = [[Field sharedInstance] movingRight:self];
                 break;
             }
             case DownDirectionDecision:
             {
-                moved = [[Field sharedInstance] moveUnitDown:self];
+                moved = [[Field sharedInstance] movingDown:self];
                 break;
             }
             default:
                 break;
         }
     }
-
-    [[Field sharedInstance] updateAround:self];
 }
 
 - (BOOL)isAlive
@@ -85,6 +83,26 @@
 - (NSString *)description
 {
     return [NSString stringWithFormat:@"%d", _health];
+}
+
+- (void)stepLeft
+{
+    _position.x -= SPEED;
+}
+
+- (void)stepUp
+{
+    _position.y -= SPEED;
+}
+
+- (void)stepRight
+{
+    _position.x += SPEED;
+}
+
+- (void)stepDown
+{
+    _position.y += SPEED;
 }
 
 @end
