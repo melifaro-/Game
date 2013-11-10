@@ -6,21 +6,20 @@
 //  Copyright (c) 2013 inMixed LLC. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "CollectionViewController.h"
 #import <QuartzCore/QuartzCore.h>
 #import "FieldVisualizer.h"
 #import "CollectionViewVisualizerImpl.h"
 
-@interface ViewController ()
+@interface CollectionViewController ()
 
 @end
 
-@implementation ViewController
+@implementation CollectionViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
     
     Field* bf = [Field sharedInstance];
     

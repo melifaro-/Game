@@ -30,9 +30,12 @@
         }
         
         NSMutableArray* sa = [[NSMutableArray alloc] init];
-        for (int i = 0; i < ARMY_QTY; i++)
+        
+        int armyQty = color == RedColor ? ARMY_QTY : ARMY_QTY;
+        
+        for (int i = 0; i < armyQty; i++)
         {
-            Solder* s = [[Solder alloc] initWithColor:color atX:2 * i atY:y];
+            Solder* s = [[Solder alloc] initWithColor:color atX:i atY:y];
             [sa addObject:s];
             
             [[Field sharedInstance] placeSolder:s];

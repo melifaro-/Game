@@ -10,5 +10,10 @@
 #import "VisualizerImpl.h"
 
 @interface RawDrawVisualizerImpl : VisualizerImpl
+{
+    UIImageView*    _view;
+}
+
+- (void)assignUI:(UIImageView*)view;
 
 @end

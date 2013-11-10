@@ -8,7 +8,7 @@
 
 #import "GameController.h"
 
-@interface ViewController : UIViewController
+@interface CollectionViewController : UIViewController
 {
     __weak IBOutlet UICollectionView    *_scenaCollectionView;
     __weak IBOutlet UIView              *_solderControlsView;

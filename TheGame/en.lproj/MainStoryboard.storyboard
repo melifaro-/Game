@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Jpz-hb-PIr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Jpz-hb-PIr">
     <dependencies>
-        <deployment defaultVersion="1552" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -13,23 +13,23 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="aP4-up-jtV" kind="relationship" relationship="rootViewController" id="y02-ML-lfV"/>
+                        <segue destination="wnf-TQ-vnJ" kind="relationship" relationship="rootViewController" id="Q4R-dr-gtV"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4z2-BE-eU6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137" y="34"/>
         </scene>
-        <!--View Controller - Game Scena-->
+        <!--Collection View Controller - Collection View Game Scena-->
         <scene sceneID="CR0-x2-T2e">
             <objects>
-                <viewController id="aP4-up-jtV" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="aP4-up-jtV" customClass="CollectionViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RHQ-Ar-sU0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="58V-zW-LfB">
-                                <rect key="frame" x="10" y="0.0" width="300" height="364"/>
+                                <rect key="frame" x="10" y="76" width="300" height="364"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="dXK-rt-pa8">
                                     <size key="itemSize" width="30" height="30"/>
@@ -72,9 +72,6 @@
                                         <state key="normal" title="&lt;-">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <connections>
-                                            <action selector="leftTouched:" destination="aP4-up-jtV" eventType="touchUpInside" id="Wyq-77-VDK"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4eS-6s-Hhk">
                                         <rect key="frame" x="130" y="51" width="44" height="44"/>
@@ -82,9 +79,6 @@
                                         <state key="normal" title="v">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <connections>
-                                            <action selector="downTouched:" destination="aP4-up-jtV" eventType="touchUpInside" id="GVi-sy-7nY"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2Qc-cl-Kof">
                                         <rect key="frame" x="182" y="51" width="44" height="44"/>
@@ -92,9 +86,6 @@
                                         <state key="normal" title="->">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <connections>
-                                            <action selector="rightTouched:" destination="aP4-up-jtV" eventType="touchUpInside" id="MzN-cr-hCW"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tL6-IS-G0o">
                                         <rect key="frame" x="130" y="0.0" width="44" height="44"/>
@@ -102,9 +93,6 @@
                                         <state key="normal" title="^">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <connections>
-                                            <action selector="upTouched:" destination="aP4-up-jtV" eventType="touchUpInside" id="Ixz-ph-re6"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -112,7 +100,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Game Scena" id="E6p-aM-BPc"/>
+                    <navigationItem key="navigationItem" title="Collection View Game Scena" id="E6p-aM-BPc"/>
                     <connections>
                         <outlet property="_scenaCollectionView" destination="58V-zW-LfB" id="0Yd-L1-Jb3"/>
                         <outlet property="_solderControlsView" destination="Flq-v1-1Qh" id="rAd-tu-Hco"/>
@@ -120,7 +108,72 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kq3-YE-MQU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="643" y="34"/>
+            <point key="canvasLocation" x="1288" y="-456"/>
+        </scene>
+        <!--Choose View Controller - Choose Visualizer-->
+        <scene sceneID="lE7-16-cew">
+            <objects>
+                <viewController id="wnf-TQ-vnJ" customClass="ChooseViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="myY-IZ-CTe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Glg-bi-hLE">
+                                <rect key="frame" x="73" y="95" width="175" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Collection View Visualizer">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="collectionVisualizerTouched:" destination="wnf-TQ-vnJ" eventType="touchUpInside" id="dNa-wc-ENL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="FD9-od-PAz">
+                                <rect key="frame" x="73" y="133" width="158" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Raw drawing Visualizer">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="rawDrawingVisualizerTouched:" destination="wnf-TQ-vnJ" eventType="touchUpInside" id="lxw-ML-KX1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Choose Visualizer" id="Z8J-Fi-oCj"/>
+                    <connections>
+                        <segue destination="aP4-up-jtV" kind="push" identifier="CollectionViewSegue" id="2Fq-TS-o2Q"/>
+                        <segue destination="N0F-km-r3Y" kind="push" identifier="RawDrawingSegue" id="7jp-HZ-Sqm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3OX-VH-1oB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="690" y="198"/>
+        </scene>
+        <!--Raw Drawing View Controller - Raw Drawing Game Scena-->
+        <scene sceneID="BXh-EG-XVe">
+            <objects>
+                <viewController id="N0F-km-r3Y" customClass="RawDrawingViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gls-I3-PUS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Zn9-af-aVi">
+                                <rect key="frame" x="0.0" y="90" width="320" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Raw Drawing Game Scena" id="2Te-VP-Gzr"/>
+                    <connections>
+                        <outlet property="_imageView" destination="Zn9-af-aVi" id="hlk-pW-po1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bCc-UB-g9v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1266" y="450"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

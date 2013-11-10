@@ -61,7 +61,7 @@ typedef struct _Item
             }
         }
     }
-    assert(_items.count != 11);
+//    assert(_items.count != 11);
     [_view reloadData];
 }
 
