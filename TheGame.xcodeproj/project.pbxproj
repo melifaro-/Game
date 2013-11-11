@@ -13,16 +13,34 @@
 		7840D75B17E62B2C00D24991 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7840D75917E62B2C00D24991 /* InfoPlist.strings */; };
 		7840D75D17E62B2C00D24991 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7840D75C17E62B2C00D24991 /* main.m */; };
 		7840D76117E62B2C00D24991 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7840D76017E62B2C00D24991 /* AppDelegate.m */; };
-		7840D76317E62B2C00D24991 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7840D76217E62B2C00D24991 /* Default.png */; };
-		7840D76517E62B2C00D24991 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7840D76417E62B2C00D24991 /* Default@2x.png */; };
-		7840D76717E62B2C00D24991 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7840D76617E62B2C00D24991 /* Default-568h@2x.png */; };
 		7840D76A17E62B2C00D24991 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7840D76817E62B2C00D24991 /* MainStoryboard.storyboard */; };
-		7840D76D17E62B2C00D24991 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7840D76C17E62B2C00D24991 /* ViewController.m */; };
-		7840D77517E62B2C00D24991 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7840D77417E62B2C00D24991 /* SenTestingKit.framework */; };
-		7840D77617E62B2C00D24991 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7840D75017E62B2C00D24991 /* UIKit.framework */; };
-		7840D77717E62B2C00D24991 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7840D75217E62B2C00D24991 /* Foundation.framework */; };
-		7840D77F17E62B2C00D24991 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7840D77D17E62B2C00D24991 /* InfoPlist.strings */; };
-		7840D78217E62B2C00D24991 /* TheGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7840D78117E62B2C00D24991 /* TheGameTests.m */; };
+		78B01E5E182E730400EFD043 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B01E5D182E730400EFD043 /* CollectionViewController.m */; };
+		78B01E61182E732800EFD043 /* ChooseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B01E60182E732800EFD043 /* ChooseViewController.m */; };
+		78B01E64182E733C00EFD043 /* RawDrawingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B01E63182E733C00EFD043 /* RawDrawingViewController.m */; };
+		78B01E66182E9A1F00EFD043 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78B01E65182E9A1F00EFD043 /* Images.xcassets */; };
+		78B01E69182E9E5D00EFD043 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7840D75C17E62B2C00D24991 /* main.m */; };
+		78B01E6A182E9E5D00EFD043 /* ChooseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B01E60182E732800EFD043 /* ChooseViewController.m */; };
+		78B01E6B182E9E5D00EFD043 /* FieldVisualizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FC20CB182D097A00DC5A12 /* FieldVisualizer.m */; };
+		78B01E6C182E9E5D00EFD043 /* Unit.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D4D4FC17F8579A000B3BB6 /* Unit.m */; };
+		78B01E6D182E9E5D00EFD043 /* Army.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D4D4F917F85787000B3BB6 /* Army.m */; };
+		78B01E6E182E9E5D00EFD043 /* CollectionViewVisualizerImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FC20D8182D0A0600DC5A12 /* CollectionViewVisualizerImpl.m */; };
+		78B01E6F182E9E5D00EFD043 /* Field.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D4D4FF17F857AA000B3BB6 /* Field.m */; };
+		78B01E70182E9E5D00EFD043 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7840D76017E62B2C00D24991 /* AppDelegate.m */; };
+		78B01E71182E9E5D00EFD043 /* Mind.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D4D50217F857BD000B3BB6 /* Mind.m */; };
+		78B01E72182E9E5D00EFD043 /* RawDrawingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B01E63182E733C00EFD043 /* RawDrawingViewController.m */; };
+		78B01E73182E9E5D00EFD043 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B01E5D182E730400EFD043 /* CollectionViewController.m */; };
+		78B01E74182E9E5D00EFD043 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D4D50817F9FE12000B3BB6 /* CollectionViewCell.m */; };
+		78B01E75182E9E5D00EFD043 /* VisualizerImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FC20D2182D09CE00DC5A12 /* VisualizerImpl.m */; };
+		78B01E76182E9E5D00EFD043 /* RawDrawVisualizerImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FC20D5182D09EA00DC5A12 /* RawDrawVisualizerImpl.m */; };
+		78B01E77182E9E5D00EFD043 /* Visualizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FC20CF182D09BA00DC5A12 /* Visualizer.m */; };
+		78B01E78182E9E5D00EFD043 /* Solder.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D4D50517F8BFEA000B3BB6 /* Solder.m */; };
+		78B01E79182E9E5D00EFD043 /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D4D4F617F85776000B3BB6 /* GameController.m */; };
+		78B01E7B182E9E5D00EFD043 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7840D75017E62B2C00D24991 /* UIKit.framework */; };
+		78B01E7C182E9E5D00EFD043 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7840D75217E62B2C00D24991 /* Foundation.framework */; };
+		78B01E7D182E9E5D00EFD043 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7840D75417E62B2C00D24991 /* CoreGraphics.framework */; };
+		78B01E7F182E9E5D00EFD043 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78B01E65182E9A1F00EFD043 /* Images.xcassets */; };
+		78B01E80182E9E5D00EFD043 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7840D75917E62B2C00D24991 /* InfoPlist.strings */; };
+		78B01E89182E9EF200EFD043 /* MainStoryboardiOS5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78B01E87182E9EF200EFD043 /* MainStoryboardiOS5.storyboard */; };
 		78D4D4F717F85776000B3BB6 /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D4D4F617F85776000B3BB6 /* GameController.m */; };
 		78D4D4FA17F85787000B3BB6 /* Army.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D4D4F917F85787000B3BB6 /* Army.m */; };
 		78D4D4FD17F8579A000B3BB6 /* Unit.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D4D4FC17F8579A000B3BB6 /* Unit.m */; };
@@ -37,16 +55,6 @@
 		78FC20D9182D0A0600DC5A12 /* CollectionViewVisualizerImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FC20D8182D0A0600DC5A12 /* CollectionViewVisualizerImpl.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		7840D77817E62B2C00D24991 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7840D74517E62B2C00D24991 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7840D74C17E62B2C00D24991;
-			remoteInfo = TheGame;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		7840D74D17E62B2C00D24991 /* TheGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7840D75017E62B2C00D24991 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -58,19 +66,23 @@
 		7840D75E17E62B2C00D24991 /* TheGame-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TheGame-Prefix.pch"; sourceTree = "<group>"; };
 		7840D75F17E62B2C00D24991 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7840D76017E62B2C00D24991 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7840D76217E62B2C00D24991 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		7840D76417E62B2C00D24991 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		7840D76617E62B2C00D24991 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		7840D76917E62B2C00D24991 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		7840D76B17E62B2C00D24991 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		7840D76C17E62B2C00D24991 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		7840D77317E62B2C00D24991 /* TheGameTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheGameTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7840D77417E62B2C00D24991 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		7840D77C17E62B2C00D24991 /* TheGameTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TheGameTests-Info.plist"; sourceTree = "<group>"; };
 		7840D77E17E62B2C00D24991 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7840D78017E62B2C00D24991 /* TheGameTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheGameTests.h; sourceTree = "<group>"; };
 		7840D78117E62B2C00D24991 /* TheGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheGameTests.m; sourceTree = "<group>"; };
 		7840D79217E7803600D24991 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		78B01E5C182E730400EFD043 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		78B01E5D182E730400EFD043 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
+		78B01E5F182E732800EFD043 /* ChooseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseViewController.h; sourceTree = "<group>"; };
+		78B01E60182E732800EFD043 /* ChooseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseViewController.m; sourceTree = "<group>"; };
+		78B01E62182E733C00EFD043 /* RawDrawingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RawDrawingViewController.h; sourceTree = "<group>"; };
+		78B01E63182E733C00EFD043 /* RawDrawingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RawDrawingViewController.m; sourceTree = "<group>"; };
+		78B01E65182E9A1F00EFD043 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		78B01E85182E9E5D00EFD043 /* TheGame copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TheGame copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		78B01E86182E9E5D00EFD043 /* TheGame copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "TheGame copy-Info.plist"; path = "/depot/lerning/TheGame/TheGame copy-Info.plist"; sourceTree = "<absolute>"; };
+		78B01E88182E9EF200EFD043 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = TheGame/en.lproj/MainStoryboardiOS5.storyboard; sourceTree = "<group>"; };
 		78D4D4F517F85776000B3BB6 /* GameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameController.h; path = Model/GameController.h; sourceTree = "<group>"; };
 		78D4D4F617F85776000B3BB6 /* GameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameController.m; path = Model/GameController.m; sourceTree = "<group>"; };
 		78D4D4F817F85787000B3BB6 /* Army.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Army.h; path = Model/Army.h; sourceTree = "<group>"; };
@@ -109,19 +121,52 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7840D76F17E62B2C00D24991 /* Frameworks */ = {
+		78B01E7A182E9E5D00EFD043 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7840D77517E62B2C00D24991 /* SenTestingKit.framework in Frameworks */,
-				7840D77617E62B2C00D24991 /* UIKit.framework in Frameworks */,
-				7840D77717E62B2C00D24991 /* Foundation.framework in Frameworks */,
+				78B01E7B182E9E5D00EFD043 /* UIKit.framework in Frameworks */,
+				78B01E7C182E9E5D00EFD043 /* Foundation.framework in Frameworks */,
+				78B01E7D182E9E5D00EFD043 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7810E521182F8A9300DC66C2 /* iOS5 */ = {
+			isa = PBXGroup;
+			children = (
+				78B01E87182E9EF200EFD043 /* MainStoryboardiOS5.storyboard */,
+			);
+			name = iOS5;
+			sourceTree = "<group>";
+		};
+		7810E522182F8AB900DC66C2 /* iOS6+ */ = {
+			isa = PBXGroup;
+			children = (
+				78B01E5C182E730400EFD043 /* CollectionViewController.h */,
+				78B01E5D182E730400EFD043 /* CollectionViewController.m */,
+				7840D76817E62B2C00D24991 /* MainStoryboard.storyboard */,
+				78D4D50717F9FE12000B3BB6 /* CollectionViewCell.h */,
+				78D4D50817F9FE12000B3BB6 /* CollectionViewCell.m */,
+				78FC20D7182D0A0600DC5A12 /* CollectionViewVisualizerImpl.h */,
+				78FC20D8182D0A0600DC5A12 /* CollectionViewVisualizerImpl.m */,
+			);
+			name = "iOS6+";
+			sourceTree = "<group>";
+		};
+		7810E523182F8BA900DC66C2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				78B01E5F182E732800EFD043 /* ChooseViewController.h */,
+				78B01E60182E732800EFD043 /* ChooseViewController.m */,
+				78B01E62182E733C00EFD043 /* RawDrawingViewController.h */,
+				78B01E63182E733C00EFD043 /* RawDrawingViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		7840D74417E62B2C00D24991 = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +174,7 @@
 				7840D77A17E62B2C00D24991 /* TheGameTests */,
 				7840D74F17E62B2C00D24991 /* Frameworks */,
 				7840D74E17E62B2C00D24991 /* Products */,
+				78B01E86182E9E5D00EFD043 /* TheGame copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,7 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				7840D74D17E62B2C00D24991 /* TheGame.app */,
-				7840D77317E62B2C00D24991 /* TheGameTests.octest */,
+				78B01E85182E9E5D00EFD043 /* TheGame copy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -157,15 +203,11 @@
 			children = (
 				7840D75F17E62B2C00D24991 /* AppDelegate.h */,
 				7840D76017E62B2C00D24991 /* AppDelegate.m */,
-				7840D76817E62B2C00D24991 /* MainStoryboard.storyboard */,
-				7840D76B17E62B2C00D24991 /* ViewController.h */,
-				7840D76C17E62B2C00D24991 /* ViewController.m */,
 				7840D75717E62B2C00D24991 /* Supporting Files */,
 				78D4D4F417F8573F000B3BB6 /* Model */,
 				7840D79217E7803600D24991 /* Common.h */,
-				78D4D50717F9FE12000B3BB6 /* CollectionViewCell.h */,
-				78D4D50817F9FE12000B3BB6 /* CollectionViewCell.m */,
 				78FC20CD182D098500DC5A12 /* PresenatationLayer */,
+				78B01E65182E9A1F00EFD043 /* Images.xcassets */,
 			);
 			path = TheGame;
 			sourceTree = "<group>";
@@ -177,9 +219,6 @@
 				7840D75917E62B2C00D24991 /* InfoPlist.strings */,
 				7840D75C17E62B2C00D24991 /* main.m */,
 				7840D75E17E62B2C00D24991 /* TheGame-Prefix.pch */,
-				7840D76217E62B2C00D24991 /* Default.png */,
-				7840D76417E62B2C00D24991 /* Default@2x.png */,
-				7840D76617E62B2C00D24991 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -234,8 +273,9 @@
 				78FC20D2182D09CE00DC5A12 /* VisualizerImpl.m */,
 				78FC20D4182D09EA00DC5A12 /* RawDrawVisualizerImpl.h */,
 				78FC20D5182D09EA00DC5A12 /* RawDrawVisualizerImpl.m */,
-				78FC20D7182D0A0600DC5A12 /* CollectionViewVisualizerImpl.h */,
-				78FC20D8182D0A0600DC5A12 /* CollectionViewVisualizerImpl.m */,
+				7810E523182F8BA900DC66C2 /* Controllers */,
+				7810E522182F8AB900DC66C2 /* iOS6+ */,
+				7810E521182F8A9300DC66C2 /* iOS5 */,
 			);
 			name = PresenatationLayer;
 			sourceTree = "<group>";
@@ -260,24 +300,22 @@
 			productReference = 7840D74D17E62B2C00D24991 /* TheGame.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7840D77217E62B2C00D24991 /* TheGameTests */ = {
+		78B01E67182E9E5D00EFD043 /* TheGame iOS5 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7840D78817E62B2C00D24991 /* Build configuration list for PBXNativeTarget "TheGameTests" */;
+			buildConfigurationList = 78B01E82182E9E5D00EFD043 /* Build configuration list for PBXNativeTarget "TheGame iOS5" */;
 			buildPhases = (
-				7840D76E17E62B2C00D24991 /* Sources */,
-				7840D76F17E62B2C00D24991 /* Frameworks */,
-				7840D77017E62B2C00D24991 /* Resources */,
-				7840D77117E62B2C00D24991 /* ShellScript */,
+				78B01E68182E9E5D00EFD043 /* Sources */,
+				78B01E7A182E9E5D00EFD043 /* Frameworks */,
+				78B01E7E182E9E5D00EFD043 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7840D77917E62B2C00D24991 /* PBXTargetDependency */,
 			);
-			name = TheGameTests;
-			productName = TheGameTests;
-			productReference = 7840D77317E62B2C00D24991 /* TheGameTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			name = "TheGame iOS5";
+			productName = TheGame;
+			productReference = 78B01E85182E9E5D00EFD043 /* TheGame copy.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -301,7 +339,7 @@
 			projectRoot = "";
 			targets = (
 				7840D74C17E62B2C00D24991 /* TheGame */,
-				7840D77217E62B2C00D24991 /* TheGameTests */,
+				78B01E67182E9E5D00EFD043 /* TheGame iOS5 */,
 			);
 		};
 /* End PBXProject section */
@@ -311,39 +349,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78B01E66182E9A1F00EFD043 /* Images.xcassets in Resources */,
 				7840D75B17E62B2C00D24991 /* InfoPlist.strings in Resources */,
-				7840D76317E62B2C00D24991 /* Default.png in Resources */,
-				7840D76517E62B2C00D24991 /* Default@2x.png in Resources */,
-				7840D76717E62B2C00D24991 /* Default-568h@2x.png in Resources */,
 				7840D76A17E62B2C00D24991 /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7840D77017E62B2C00D24991 /* Resources */ = {
+		78B01E7E182E9E5D00EFD043 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7840D77F17E62B2C00D24991 /* InfoPlist.strings in Resources */,
+				78B01E7F182E9E5D00EFD043 /* Images.xcassets in Resources */,
+				78B01E89182E9EF200EFD043 /* MainStoryboardiOS5.storyboard in Resources */,
+				78B01E80182E9E5D00EFD043 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		7840D77117E62B2C00D24991 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7840D74917E62B2C00D24991 /* Sources */ = {
@@ -351,6 +373,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7840D75D17E62B2C00D24991 /* main.m in Sources */,
+				78B01E61182E732800EFD043 /* ChooseViewController.m in Sources */,
 				78FC20CC182D097A00DC5A12 /* FieldVisualizer.m in Sources */,
 				78D4D4FD17F8579A000B3BB6 /* Unit.m in Sources */,
 				78D4D4FA17F85787000B3BB6 /* Army.m in Sources */,
@@ -358,8 +381,9 @@
 				78D4D50017F857AA000B3BB6 /* Field.m in Sources */,
 				7840D76117E62B2C00D24991 /* AppDelegate.m in Sources */,
 				78D4D50317F857BD000B3BB6 /* Mind.m in Sources */,
+				78B01E64182E733C00EFD043 /* RawDrawingViewController.m in Sources */,
+				78B01E5E182E730400EFD043 /* CollectionViewController.m in Sources */,
 				78D4D50917F9FE12000B3BB6 /* CollectionViewCell.m in Sources */,
-				7840D76D17E62B2C00D24991 /* ViewController.m in Sources */,
 				78FC20D3182D09CE00DC5A12 /* VisualizerImpl.m in Sources */,
 				78FC20D6182D09EA00DC5A12 /* RawDrawVisualizerImpl.m in Sources */,
 				78FC20D0182D09BA00DC5A12 /* Visualizer.m in Sources */,
@@ -368,23 +392,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7840D76E17E62B2C00D24991 /* Sources */ = {
+		78B01E68182E9E5D00EFD043 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7840D78217E62B2C00D24991 /* TheGameTests.m in Sources */,
+				78B01E69182E9E5D00EFD043 /* main.m in Sources */,
+				78B01E6A182E9E5D00EFD043 /* ChooseViewController.m in Sources */,
+				78B01E6B182E9E5D00EFD043 /* FieldVisualizer.m in Sources */,
+				78B01E6C182E9E5D00EFD043 /* Unit.m in Sources */,
+				78B01E6D182E9E5D00EFD043 /* Army.m in Sources */,
+				78B01E6E182E9E5D00EFD043 /* CollectionViewVisualizerImpl.m in Sources */,
+				78B01E6F182E9E5D00EFD043 /* Field.m in Sources */,
+				78B01E70182E9E5D00EFD043 /* AppDelegate.m in Sources */,
+				78B01E71182E9E5D00EFD043 /* Mind.m in Sources */,
+				78B01E72182E9E5D00EFD043 /* RawDrawingViewController.m in Sources */,
+				78B01E73182E9E5D00EFD043 /* CollectionViewController.m in Sources */,
+				78B01E74182E9E5D00EFD043 /* CollectionViewCell.m in Sources */,
+				78B01E75182E9E5D00EFD043 /* VisualizerImpl.m in Sources */,
+				78B01E76182E9E5D00EFD043 /* RawDrawVisualizerImpl.m in Sources */,
+				78B01E77182E9E5D00EFD043 /* Visualizer.m in Sources */,
+				78B01E78182E9E5D00EFD043 /* Solder.m in Sources */,
+				78B01E79182E9E5D00EFD043 /* GameController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		7840D77917E62B2C00D24991 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7840D74C17E62B2C00D24991 /* TheGame */;
-			targetProxy = 7840D77817E62B2C00D24991 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7840D75917E62B2C00D24991 /* InfoPlist.strings */ = {
@@ -409,6 +441,15 @@
 				7840D77E17E62B2C00D24991 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		78B01E87182E9EF200EFD043 /* MainStoryboardiOS5.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78B01E88182E9EF200EFD043 /* en */,
+			);
+			name = MainStoryboardiOS5.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -473,9 +514,12 @@
 		7840D78617E62B2C00D24991 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TheGame/TheGame-Prefix.pch";
 				INFOPLIST_FILE = "TheGame/TheGame-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -484,45 +528,42 @@
 		7840D78717E62B2C00D24991 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TheGame/TheGame-Prefix.pch";
 				INFOPLIST_FILE = "TheGame/TheGame-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
-		7840D78917E62B2C00D24991 /* Debug */ = {
+		78B01E83182E9E5D00EFD043 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TheGame.app/TheGame";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TheGame/TheGame-Prefix.pch";
-				INFOPLIST_FILE = "TheGameTests/TheGameTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
+				INFOPLIST_FILE = "TheGame copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "TheGame copy";
+				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
-		7840D78A17E62B2C00D24991 /* Release */ = {
+		78B01E84182E9E5D00EFD043 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TheGame.app/TheGame";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TheGame/TheGame-Prefix.pch";
-				INFOPLIST_FILE = "TheGameTests/TheGameTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
+				INFOPLIST_FILE = "TheGame copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "TheGame copy";
+				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
@@ -547,11 +588,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7840D78817E62B2C00D24991 /* Build configuration list for PBXNativeTarget "TheGameTests" */ = {
+		78B01E82182E9E5D00EFD043 /* Build configuration list for PBXNativeTarget "TheGame iOS5" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7840D78917E62B2C00D24991 /* Debug */,
-				7840D78A17E62B2C00D24991 /* Release */,
+				78B01E83182E9E5D00EFD043 /* Debug */,
+				78B01E84182E9E5D00EFD043 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
