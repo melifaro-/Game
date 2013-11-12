@@ -16,7 +16,7 @@
     BOOL decisionMade = NO;
     DesicionsType d;
     
-    while (!decisionMade)
+//    while (!decisionMade)
     {
         decisionMade = YES;
         d = random() % DecisionsCount;
@@ -60,10 +60,6 @@
     }
     
     return d;
-//    if (s.color == WhiteColor)
-//        return DownDirectionDecision;
-//    else
-//        return UpDirectionDecison;
 }
 
 @end

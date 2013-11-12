@@ -28,7 +28,10 @@
     if (self = [super initWithColor:color atX:x atY:y])
     {
         _health = LIVES;
-        _mind = [[Mind alloc] init];
+        if (color != RedColor)
+            _mind = [[PassiveCollectivismMind alloc] init];
+        else
+            _mind = [[Mind alloc] init];
     }
     return self;
 }
@@ -38,34 +41,10 @@
     NSArray* lookAroundInfo = [[Field sharedInstance] lookAround:self];
     
     BOOL moved = NO;
-    while (!moved)
+//    while (!moved)
     {
         DesicionsType d = [_mind makeDecisionForSolder:self withOtherUnitsInfo:lookAroundInfo];
-        
-        switch (d) {
-            case LeftDirectionDecision:
-            {
-                moved = [[Field sharedInstance] movingLeft:self];
-                break;
-            }
-            case UpDirectionDecison:
-            {
-                moved = [[Field sharedInstance] movingUp:self];
-                break;
-            }
-            case RightDirectionDecision:
-            {
-                moved = [[Field sharedInstance] movingRight:self];
-                break;
-            }
-            case DownDirectionDecision:
-            {
-                moved = [[Field sharedInstance] movingDown:self];
-                break;
-            }
-            default:
-                break;
-        }
+        moved = [[Field sharedInstance] move:self inDirection:d];
     }
 }
 
@@ -85,24 +64,32 @@
     return [NSString stringWithFormat:@"%d", _health];
 }
 
-- (void)stepLeft
+- (void)step:(DesicionsType)decision
 {
-    _position.x -= SPEED;
-}
-
-- (void)stepUp
-{
-    _position.y -= SPEED;
-}
-
-- (void)stepRight
-{
-    _position.x += SPEED;
-}
-
-- (void)stepDown
-{
-    _position.y += SPEED;
+    switch (decision) {
+        case LeftDirectionDecision:
+        {
+            _position.x -= SPEED;
+            break;
+        }
+        case UpDirectionDecison:
+        {
+            _position.y -= SPEED;
+            break;
+        }
+        case RightDirectionDecision:
+        {
+            _position.x += SPEED;
+            break;
+        }
+        case DownDirectionDecision:
+        {
+            _position.y += SPEED;
+            break;
+        }
+        default:
+            break;
+    }
 }
 
 @end

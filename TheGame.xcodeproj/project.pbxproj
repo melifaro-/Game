@@ -14,6 +14,7 @@
 		7840D75D17E62B2C00D24991 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7840D75C17E62B2C00D24991 /* main.m */; };
 		7840D76117E62B2C00D24991 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7840D76017E62B2C00D24991 /* AppDelegate.m */; };
 		7840D76A17E62B2C00D24991 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7840D76817E62B2C00D24991 /* MainStoryboard.storyboard */; };
+		7898D3711831665900E8AEF2 /* PassiveCollectivismMind.m in Sources */ = {isa = PBXBuildFile; fileRef = 7898D3701831665900E8AEF2 /* PassiveCollectivismMind.m */; };
 		78B01E5E182E730400EFD043 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B01E5D182E730400EFD043 /* CollectionViewController.m */; };
 		78B01E61182E732800EFD043 /* ChooseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B01E60182E732800EFD043 /* ChooseViewController.m */; };
 		78B01E64182E733C00EFD043 /* RawDrawingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B01E63182E733C00EFD043 /* RawDrawingViewController.m */; };
@@ -73,6 +74,8 @@
 		7840D78017E62B2C00D24991 /* TheGameTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheGameTests.h; sourceTree = "<group>"; };
 		7840D78117E62B2C00D24991 /* TheGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheGameTests.m; sourceTree = "<group>"; };
 		7840D79217E7803600D24991 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		7898D36F1831665900E8AEF2 /* PassiveCollectivismMind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassiveCollectivismMind.h; sourceTree = "<group>"; };
+		7898D3701831665900E8AEF2 /* PassiveCollectivismMind.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassiveCollectivismMind.m; sourceTree = "<group>"; };
 		78B01E5C182E730400EFD043 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
 		78B01E5D182E730400EFD043 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
 		78B01E5F182E732800EFD043 /* ChooseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseViewController.h; sourceTree = "<group>"; };
@@ -257,6 +260,8 @@
 				78D4D4FF17F857AA000B3BB6 /* Field.m */,
 				78D4D50117F857BD000B3BB6 /* Mind.h */,
 				78D4D50217F857BD000B3BB6 /* Mind.m */,
+				7898D36F1831665900E8AEF2 /* PassiveCollectivismMind.h */,
+				7898D3701831665900E8AEF2 /* PassiveCollectivismMind.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -385,6 +390,7 @@
 				78B01E5E182E730400EFD043 /* CollectionViewController.m in Sources */,
 				78D4D50917F9FE12000B3BB6 /* CollectionViewCell.m in Sources */,
 				78FC20D3182D09CE00DC5A12 /* VisualizerImpl.m in Sources */,
+				7898D3711831665900E8AEF2 /* PassiveCollectivismMind.m in Sources */,
 				78FC20D6182D09EA00DC5A12 /* RawDrawVisualizerImpl.m in Sources */,
 				78FC20D0182D09BA00DC5A12 /* Visualizer.m in Sources */,
 				78D4D50617F8BFEA000B3BB6 /* Solder.m in Sources */,

@@ -14,6 +14,7 @@ typedef enum _decisionVariantsType
     UpDirectionDecison,
     RightDirectionDecision,
     DownDirectionDecision,
+    StayOnPlaceDecision,
     DecisionsCount
 } DesicionsType;
 

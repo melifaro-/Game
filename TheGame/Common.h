@@ -13,6 +13,9 @@ typedef NSInteger TGInteger;
 #define FIELD_HEIGHT    10
 #define FIELD_WIDTH     10
 
+#define ATTACK_R        2
+#define LOOK_AROUND_R   5
+
 typedef enum _color {
     EmptyColor = 0,
     RedColor,

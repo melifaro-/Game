@@ -54,84 +54,74 @@ static Field* __sharedInstance = nil;
 {
     NSMutableArray* lookAroundInfo = [[NSMutableArray alloc] init];
     
-    for (Unit* u in _solders)
+    for (Unit* s in _solders)
     {
-        if (true)
+        if ([self distanceBetweenPoint:u.position andPoint:s.position] <= LOOK_AROUND_R)
         {
-            [lookAroundInfo addObject:u];
+            [lookAroundInfo addObject:s];
         }
     }
+    
+    NSLog(@"lookAroundInfo %@", lookAroundInfo);
+    
     return lookAroundInfo;
 }
 
-- (BOOL)movingLeft:(Solder*)s
+
+- (BOOL)move:(Solder*)s inDirection:(DesicionsType)desicion
 {
     Position nextP = s.position;
-    nextP.x -= SPEED;
-    BOOL rval = [self moveSolderWithCheck:s toPosition:nextP];
-    if (rval)
-    {
-        [s stepLeft];
-        [self attack:s];
+    switch (desicion) {
+        case LeftDirectionDecision:
+        {
+            nextP.x -= SPEED;
+            break;
+        }
+        case DownDirectionDecision:
+        {
+            nextP.y += SPEED;
+            break;
+        }
+        case RightDirectionDecision:
+        {
+            nextP.x += SPEED;
+            break;
+        }
+        case UpDirectionDecison:
+        {
+            nextP.y -= SPEED;
+            break;
+        }
+        default:
+            break;
     }
-    return rval;
-}
 
-- (BOOL)movingUp:(Solder*)s
-{
-    Position nextP = s.position;
-    nextP.y -= SPEED;
-    BOOL rval = [self moveSolderWithCheck:s toPosition:nextP];
-    if (rval)
+    BOOL rval;
+    if ([self checkPosition:nextP])
     {
-        [s stepUp];
-        [self attack:s];
-    }
-
-    return rval;
-}
-
-- (BOOL)movingRight:(Solder*)s
-{
-    Position nextP = s.position;
-    nextP.x += SPEED;
-    BOOL rval = [self moveSolderWithCheck:s toPosition:nextP];
-    if (rval)
-    {
-        [s stepRight];
-        [self attack:s];
-    }
-    return rval;
-}
-
-- (BOOL)movingDown:(Solder*)s
-{
-    Position nextP = s.position;
-    nextP.y += SPEED;
-    BOOL rval = [self moveSolderWithCheck:s toPosition:nextP];
-    if (rval)
-    {
-        [s stepDown];
-        [self attack:s];
-    }
-    return rval;
-}
-
-- (BOOL)moveSolderWithCheck:(Solder*)s toPosition:(Position)p
-{
-    if ([self checkPosition:p])
-    {
-        [self.fieldVisualizer moveObject:s toPosition:p];
-        return YES;
+        [self.fieldVisualizer moveObject:s toPosition:nextP];
+        [s step:desicion];
+        rval = YES;
     }
     else
-        return NO;
+        rval = NO;
+    
+    [self attack:s];
+    
+    return rval;
 }
 
 - (BOOL)checkPosition:(Position)p
 {
     if (p.x >= 0 && p.x < FIELD_WIDTH && p.y >= 0 && p.y < FIELD_HEIGHT)
     {
+        for (Unit* u in _solders)
+        {
+            if (u.position.x == p.x && u.position.y == p.y)
+            {
+                return NO;
+            }
+        }
         return YES;
     }
     return NO;
@@ -141,7 +131,7 @@ static Field* __sharedInstance = nil;
 {
     for (Solder* s in _solders)
     {
-        if (ABS(s.position.x - u.position.x) + ABS(s.position.y - u.position.y) < 3 && s.color != u.color && s != u)
+        if ([self distanceBetweenPoint:s.position andPoint:u.position] < ATTACK_R  && s.color != u.color && s != u)
         {
             [s attackedBySolder:u];
             if (![s isAlive])
@@ -151,6 +141,11 @@ static Field* __sharedInstance = nil;
             break;
         }
     }
+}
+
+- (double)distanceBetweenPoint:(Position)a andPoint:(Position)b
+{
+    return sqrt(pow(a.x - b.x, 2) + pow(a.y - b.y, 2));
 }
 
 @end

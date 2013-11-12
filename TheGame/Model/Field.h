@@ -21,12 +21,7 @@
 - (void)placeSolder:(Solder*)u;
 - (void)killSolder:(Solder*)u;
 
-
-- (BOOL)movingLeft:(Solder*)s;
-- (BOOL)movingUp:(Solder*)s;
-- (BOOL)movingRight:(Solder*)s;
-- (BOOL)movingDown:(Solder*)s;
-
+- (BOOL)move:(Solder*)s inDirection:(DesicionsType)desicion;
 - (BOOL)checkPosition:(Position)p;
 - (NSArray*)lookAround:(Unit*)u;
 
